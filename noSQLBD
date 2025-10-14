@@ -1,0 +1,19 @@
+use bubatag
+
+db.createCollection("usuarios)
+
+db.usuarios.insertMany([{
+    nome: "Vinícius de Souza Camargo Costa",
+    email: "vinicius@gmail.com",
+    senha: "1234",
+    CCIR: "1234567891234",
+    coleiras: [
+        {
+            idcoleira: 1,
+            n_coleira: "1",
+            IP: "10.12.27.30",
+            bubalinos:
+        }
+    ]
+
+}])
