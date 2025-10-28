@@ -59,6 +59,11 @@ CREATE TABLE if NOT EXISTS `dados` (
 	CONSTRAINT `dados_ibfk_2` FOREIGN KEY (`idbubalino`) REFERENCES `bubalinos` (`idbubalino`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=UTF8MB4_GENERAL_CI;
 
+CREATE TABLE if NOT EXISTS `localizacao`(
+	`idlocalizacao` INT NOT NULL AUTO_INCREMENT,
+	``
+)
+
 CREATE TABLE if NOT EXISTS `historico_estresse` (
 	`idhistorico_estresse` INT NOT NULL AUTO_INCREMENT,
 	`estado_estresse` VARCHAR(50) DEFAULT NULL,
