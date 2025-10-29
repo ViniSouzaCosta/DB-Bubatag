@@ -30,6 +30,14 @@ db.usuarios.insertOne({
         ],
         historico_estresse: [
           { _id: ObjectId(), estado_estresse: "Ocioso", data_estresse: new Date(), ativo: true }
+        ],
+        localizacao: [
+          {
+            _id: ObjectId(),
+            latitude: "-23.563210",
+            longitude: "-46.654321",
+            ativo: true
+          }
         ]
       }
     }
