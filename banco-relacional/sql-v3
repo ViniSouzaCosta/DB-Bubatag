@@ -60,11 +60,12 @@ CREATE TABLE if NOT EXISTS `dados` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=UTF8MB4_GENERAL_CI;
 
 CREATE TABLE IF NOT EXISTS `localizacao` (
-  `idlocalizacao` int(5) NOT NULL AUTO_INCREMENT,
-  `idbubalino` int(5) DEFAULT 0,
-  `idcoleira` int(5) DEFAULT 0,
-  `latitude` varchar(50) DEFAULT '0',
-  `longitude` varchar(50) DEFAULT '0',
+  `idlocalizacao` int NOT NULL AUTO_INCREMENT,
+  `idbubalino` int DEFAULT 0,
+  `idcoleira` int DEFAULT 0,
+  `ativo` BOOLEAN NOT NULL DEFAULT 1,
+  `latitude` varchar DEFAULT '0',
+  `longitude` varchar DEFAULT '0',
   PRIMARY KEY (`idlocalizacao`),
   KEY `fk_localizacao_bubalinos` (`idbubalino`),
   KEY `fk_localizacao_coleira` (`idcoleira`),
